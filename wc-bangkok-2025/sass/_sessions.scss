@@ -31,11 +31,18 @@
 			background-color: var(--wp--preset--color--accent) !important;
 			color: var(--wp--preset--color--white);
 			text-transform: uppercase;
-			font-size: 1.2rem;
-			font-weight: 500;
+			font-size: 1rem;
+			font-weight: 300;
 			margin-block: 0 !important;
 
+			direction: ltr;
+			unicode-bidi: isolate;
+			max-width: calc(100% - 3ch);
+			overflow: hidden;
+			text-overflow: clip;
+
 			&:after {
+				display: none;
 				content: "";
 				position: absolute;
 				background-color: var(--wp--preset--color--accent);
@@ -145,13 +152,13 @@
 
 			.wordcamp-schedule__session-title {
 				justify-content: center;
-				opacity: 0.9;
+				opacity: 0.9; 
 			}
 		}
 
 		.wordcamp-schedule__session-title {
 			line-height: 1.4;
-			font-size: 0.9rem;
+			font-size: 1rem;
 		}
 
 		p {
